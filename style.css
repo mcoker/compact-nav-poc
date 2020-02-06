@@ -37,7 +37,6 @@
 .nav__list {
   overflow: hidden;
   width: calc(var(--pf-global--spacer--lg) * 2 + var(--nav-item-bullet));
-  padding: 0 0 0 var(--pf-global--spacer--lg);
 }
 
 .nav__list:hover .nav__list-item-link-text {
@@ -64,7 +63,7 @@
 .nav__list-item-link.current::after {
   content: "";
   position: absolute;
-  left: -4px;
+  left: calc(var(--pf-global--spacer--lg) - 4px);
   width: calc(var(--nav-item-bullet) + 8px);
   height: calc(var(--nav-item-bullet) + 8px);
   border-radius: 50%;
@@ -84,7 +83,7 @@
 
 .nav__list-item-link {
   white-space: nowrap;
-  padding: 2px 0;
+  padding: 2px 0 2px var(--pf-global--spacer--lg);
   align-items: center;
   display: flex;
 }
