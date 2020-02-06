@@ -68,7 +68,7 @@
   width: calc(var(--nav-item-bullet) + 8px);
   height: calc(var(--nav-item-bullet) + 8px);
   border-radius: 50%;
-  border: 1px solid var(--pf-global--active-color--100);
+  border: 1px solid var(--pf-global--active-color--400);
   top: 50%;
   transform: translateY(-50%);
 }
@@ -133,7 +133,7 @@
 
 .nav__list-item-link.current::before,
 .nav__list-item:hover .nav__list-item-link.current::before {
-  background: var(--pf-global--active-color--100);
+  background: var(--pf-global--active-color--400);
 }
 
 .nav__subnav {
